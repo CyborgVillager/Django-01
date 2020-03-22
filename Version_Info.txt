@@ -13,7 +13,7 @@
                | Description: v# description |
                | --------------------------- |
 ----------------------------    ----------------------------   ------------------------- ------------------------------
---v0 Django-01 Respo Created: Respo created, Django-01 Project
+v0 Django-01 Respo Created: Respo created, Django-01 Project
 
                             Files Changed:
                             * Installation of Django & its components
@@ -48,3 +48,65 @@
                                     - Lorem copyright
                                     - Lorem email
                                     - Lorem social media logo's
+----------------------------    ----------------------------   ------------------------- ------------------------------
+--v1 Setting Up: Setup the site, to allow having access to the index, created startapp ursitey
+
+                    Files Modified:
+                    * python manage.py startapp ursitey
+                     * mysite/settings.py
+                        - INSTALLED_APPS, included 'ursitey.apps.UrsiteyConfig' to connected to the start app
+                        - Changed TIME_ZONE to 'America/Chicago'
+
+                     * mysite/urls.py
+                        - Added path to index & ursitey/ , will modify later
+
+                    * ursitey/urls.py
+                        - urlpatterns / path to index
+                        - paths will be modified in later versions
+
+                    * ursitey/views.py
+                        - imported django.shortcuts for HttpResponse
+                        - function for index/ returns a HttpResponse -> Basic overlay of Posts
+                            - currently have 1 'post' to be used as a reference. Can be seen once the site
+                                is running
+
+                    * ursitey/admin.py resize
+                        -> Modified the 'admin' posting page, allows the title & content field to have size,rows/cols
+                            depending on the subject
+                        -> Stackover flow link: https://stackoverflow.com/questions/910169/resize-fields-in-django-admin
+                            - Class Admposts(admin.ModelAdmin) -> line 8-14
+
+                    * ursitey/models.py
+                        - New classes
+                            * Post & Choice
+                                - posting content -> title,content, published date
+                                - choice -> will be making this into a 'upvote/downvote' system.
+
+                    * ursitey New Folders
+                        -> static
+                        -> templates
+                            - Acquired these from respo https://github.com/CyborgVillager/Django0
+                                - Will modify as the project evolves
+
+
+                             * templates/ursitey
+                                -> index.html
+                                    - Once the site runs, a lorem 'post' can be seen. Min - css
+                                        implement requires further work. Used as a reference for
+                                            the other posts
+
+                                -> detail.html & results.html
+                                    - minimal recoding / will work on these at a later version / once
+                                        the main components are completed
+
+                    Other Changes:
+                    * DB Migrations sqlite
+                        - python manage.py migrate
+                            - python manage.py makemigrations ursitey
+                                - python manage.py sqlmigrate ursitey 0001
+                                    - python manage.py migrate
+
+                    * New user - Admin
+                        - Username: admin
+                        - Email: admin@email.com
+                        - Password: password

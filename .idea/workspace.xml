@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7fdabca2-aa13-4de9-be19-b9b772fa2bd4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/mysite/ursitey/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/ursitey/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/ursitey/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/ursitey/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/ursitey/static/ursitey/css/style0.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/ursitey/static/ursitey/images/desert_pyramid.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/ursitey/templates/ursitey/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/ursitey/templates/ursitey/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/ursitey/templates/ursitey/results.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/ursitey/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/ursitey/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/ursitey/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Version_Info.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Version_Info.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysite/urls.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ZTNIG2pEVCS4UPRZ1t26yXUFDp" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7fdabca2-aa13-4de9-be19-b9b772fa2bd4" name="Default Changelist" comment="" />
+      <created>1584859042539</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584859042539</updated>
+      <workItem from="1584859053751" duration="53000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1584859105450">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1360.728/-1360.91.1360.728/329.-1024.1280.984@0.0.1920.1040" timestamp="1584859105450" />
+  </component>
+</project>

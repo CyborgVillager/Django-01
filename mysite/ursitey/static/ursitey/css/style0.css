@@ -1,0 +1,105 @@
+h1{
+  text-align: center;
+  font-weight: bold;
+  color: green;
+
+}
+
+h4{
+    font-weight: bold;
+    font-size: 120%;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+/* options for votes */
+.options{
+   text-align: center;
+   padding: 30px;
+}
+
+/* detail.html, shows the user what has been voted with the # count */
+.voted{
+    font-size: 120%;
+    color: blue;
+}
+
+/* padding @ results.html for Vote Again */
+.votetext{
+     padding: 0px 0px 0px 10px;
+}
+
+/* padding @ results.html for Yes or No option */
+.voteoption{
+     padding: 0px 0px 0px 5px;
+
+}
+
+/* results.html vote results */
+.results{
+    text-align: center;
+     padding: 30px;
+     font-size: 120%;
+    color: blue;
+
+}
+
+li{
+    padding: 5px;
+}
+/* Button Style */
+.button {
+  padding: 5px 15px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+/* Button Hover */
+.button:hover {
+    background-color: #3e8e41;
+    font-size: 20px;
+
+}
+
+/* button clicked */
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+
+}
+/* Hides the Button Outline */
+:focus {
+outline: 0;
+}
+
+/* Full CSS Code -> https://github.com/CyborgVillager/Front-End-Web/blob/master/Basic_Info/CSS/css/style9.css */
+/* User link click/hover */
+/* Link color blue */
+a:link{
+    color:blue;
+    }
+
+/* Tells user via color code that they already visited the link */
+a:visited{
+    color: black;
+}
+/* When user is hovering over the link/underline & changes size */
+a:hover{
+    color: mediumvioletred;
+    text-decoration: underline;
+    font-size: 120%;
+}
+/* When user clicks on it turns aquad to signify they clicked on it */
+a:active{
+    color: darkblue;
+}
+
