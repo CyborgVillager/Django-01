@@ -1,5 +1,8 @@
 from django.urls import path
 
+
+
+
 app_name = 'ursitey'
 # Aquire views.py
 try:
@@ -16,5 +19,5 @@ urlpatterns = [
     path('<int:post_id>/results/', views.results, name='results'),
     # e.g URL: /polls/#/vote/
     # -> You've voted for question #
-    path('<int:post_id>/vote/', views.vote, name='vote'),
+    path('<int:post_id>/about/', views.vote, name='about'),
 ]

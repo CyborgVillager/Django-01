@@ -49,7 +49,7 @@ v0 Django-01 Respo Created: Respo created, Django-01 Project
                                     - Lorem email
                                     - Lorem social media logo's
 ----------------------------    ----------------------------   ------------------------- ------------------------------
---v1 Setting Up: Setup the site, to allow having access to the index, created startapp ursitey
+v1 Setting Up: Setup the site, to allow having access to the index, created startapp ursitey
 
                     Files Modified:
                     * python manage.py startapp ursitey
@@ -110,3 +110,24 @@ v0 Django-01 Respo Created: Respo created, Django-01 Project
                         - Username: admin
                         - Email: admin@email.com
                         - Password: password
+----------------------------    ----------------------------   ------------------------- ------------------------------
+
+--v3 Updated Index: Quick summary -> updated the index/ added new css files -> footer & post-info.css
+
+                    Files Modified:
+                        *ursitey/css/footer.css & post-info.css
+                            -footer for the site
+                            - post-info goes into depth once the user clicks on a post
+
+                        * Updated style0.css ->index.html
+                            - updated the index/gives detail
+
+                        * Updated DB
+                            - included to upload images to come with the post
+                                - requires work on showing the image onto the page
+
+                        * Work on fixing the css/ nav bar
+                            - Will work on including 'About' & Contact pages
+                                - As of now the 'detail.html' has about/contact nav bars
+
+                        * Will update further

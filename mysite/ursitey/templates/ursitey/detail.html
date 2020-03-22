@@ -8,43 +8,49 @@
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link  rel="stylesheet" type="text/css" href="{% static 'polls/css/style0.css' %}" >
+    <link  rel="stylesheet" type="text/css" href="{% static 'ursitey/css/style0.css' %}" >
+    <link  rel="stylesheet" type="text/css" href="{% static 'ursitey/css/post-info.css' %}" >
+    <link  rel="stylesheet" type="text/css" href="{% static 'ursitey/css/footer.css' %}" >
 </head>
 <body>
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="/">Poll Site</a>
+      <a class="navbar-brand" href="/">Sitey</a>
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="/">Home</a></li>
+      <li class="active"><a href="/">About</a></li>
+      <li class="active"><a href="/">Contact</a></li>
       <li class="active"><a href="../../admin">Admin</a></li>
     </ul>
   </div>
 </nav>
-<h1>{{ question.question_text }}</h1>
-{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
-<div class="options">
+<!-- Post Title -->
+<h1>{{ post.post_title }}</h1>
+<!-- Post Image -->
 
-<form action="{%  url 'ursitey:vote' question.id %}" method="post">
-{% csrf_token %}
-{% for choice in question.choice_set.all %}
-    <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
-    <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label>
+<img class='image-content' src="{{ post.post_image}}" alt="{{ post.post_title }}-thumbnail" />
+
+<!-- Post Content -->
+<p class="content-info">
+    {{ post.post_content }}
+</p>
+
+<!-- Back to Index Page -->
+<button class="backbtn"><a href="/" >Back</a></button>
+
 <br>
-    {% endfor %}
+<br>
+
+<!--Footer -->
+<footer>
+  <p class="footerauthor">Company Name</p>
+  <p>Contact information: <a href="mailto:email@example.com">
+  email@example.com</a></p>
+</footer>+
 
 
-<input class='button' type="submit" value="Vote!">
-</form>
-</div>
-
-
-<ul class="voted">
-{% for choice in question.choice_set.all %}
-    <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
-{% endfor %}
-</ul>
 
 </body>
 </html>

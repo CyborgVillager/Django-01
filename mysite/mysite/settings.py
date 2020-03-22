@@ -122,3 +122,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+MEDIA_URL = '/media/post_img_upload/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'ursitey/static/media/post_img_upload')

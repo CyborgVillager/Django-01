@@ -1,0 +1,50 @@
+
+img.image-content{
+  margin: 0 auto;
+    display: block;
+    text-align: center;
+    float: none;
+}
+
+
+.backbtn {
+  padding: 5px 15px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  border: 100px;
+  width: 10rem;
+  margin-left: 1em;
+
+}
+
+.content-info{
+    text-align: center;
+    padding: 2%;
+
+}
+
+/* Button Hover */
+.backbtn:hover {
+    background-color: #3e8e41;
+    font-size: 20px;
+
+}
+
+/* button clicked */
+.backbtn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+
+}
+
+/* Hides the Button Outline */
+:focus {
+outline: 0;
+}

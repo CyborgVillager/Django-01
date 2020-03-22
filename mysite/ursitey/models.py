@@ -11,6 +11,7 @@ import datetime
 class Post(models.Model):
     post_title = models.CharField(max_length=125)
     post_content = models.TextField(max_length=2500)
+    post_image = models.ImageField(blank=False)
 
     def __str__(self):
         return self.post_title

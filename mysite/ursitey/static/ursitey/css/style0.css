@@ -2,6 +2,8 @@ h1{
   text-align: center;
   font-weight: bold;
   color: green;
+  width: 10%;
+
 
 }
 
@@ -14,41 +16,30 @@ body{
     background-color: whitesmoke;
 }
 
-/* options for votes */
-.options{
-   text-align: center;
-   padding: 30px;
-}
 
-/* detail.html, shows the user what has been voted with the # count */
-.voted{
-    font-size: 120%;
-    color: blue;
-}
-
-/* padding @ results.html for Vote Again */
-.votetext{
-     padding: 0px 0px 0px 10px;
-}
-
-/* padding @ results.html for Yes or No option */
-.voteoption{
-     padding: 0px 0px 0px 5px;
-
-}
-
-/* results.html vote results */
-.results{
-    text-align: center;
-     padding: 30px;
-     font-size: 120%;
-    color: blue;
-
-}
-
+/* Post Bullet Points */
 li{
     padding: 5px;
+    list-style: none
 }
+/* Post Title */
+.post-title{
+    font-size: 150%;
+}
+/* Post Content Start */
+/* Post Content First Letter */
+p::first-letter{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+/* Post Content Info */
+.content-info{
+    max-width: 120%;
+    letter-spacing: 1.2px;
+
+}
+/* Post Content End */
+
 /* Button Style */
 .button {
   padding: 5px 15px;

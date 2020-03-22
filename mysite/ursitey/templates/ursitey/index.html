@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="{% static 'polls/css/style0.css' %}" >
+    <link rel="stylesheet" type="text/css" href="{% static 'ursitey/css/style0.css' %}" >
+    <link rel="stylesheet" type="text/css" href="{% static 'ursitey/css/footer.css' %}" >
 
 </head>
 
@@ -29,13 +30,25 @@
 <h1>Posts</h1>
 <hr/>
 <!-- Acquire DB info for posts Start -->
+<style>
+    .hide{
+  display:none;
+}
+</style>
 
 {% if latest_post_list %}
     <ul>
     {% for post in latest_post_list %}
-        <li><a href="{% url 'ursitey:detail' post.id %}">{{ post.post_title }}</a>
+        <img src="{{ post.post_image}}" alt="{{ post.post_title }}-thumbnail" >
+        <li><a href="{% url 'ursitey:detail' post.id %}"><b class="post-title">{{ post.post_title }}</b></a>
 
+    <!-- Post Content Info -->
+        <p class="content-info" >
         {{ post.post_content }}
+         </p>
+
+
+
         </li>
     {% endfor %}
     </ul>
@@ -45,4 +58,14 @@
 
 <!-- Acquire DB info for posts End -->
 </body>
+
+
+<!--Footer -->
+<footer>
+  <p class="footerauthor">Company Name</p>
+  <p>Contact information: <a href="mailto:email@example.com">
+  email@example.com</a></p>
+</footer>+
+
+
 </html>
