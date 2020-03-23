@@ -112,7 +112,7 @@ v1 Setting Up: Setup the site, to allow having access to the index, created star
                         - Password: password
 ----------------------------    ----------------------------   ------------------------- ------------------------------
 
---v3 Updated Index: Quick summary -> updated the index/ added new css files -> footer & post-info.css
+v2 Updated Index: Quick summary -> updated the index/ added new css files -> footer & post-info.css
 
                     Files Modified:
                         *ursitey/css/footer.css & post-info.css
@@ -131,3 +131,5 @@ v1 Setting Up: Setup the site, to allow having access to the index, created star
                                 - As of now the 'detail.html' has about/contact nav bars
 
                         * Will update further
+----------------------------    ----------------------------   ------------------------- ------------------------------
+--v3 Version_Info Edit Fix: re-name the version # for Updated Index. Now its v2 instead of v3
